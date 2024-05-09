@@ -9,14 +9,14 @@ public class StudentBeanService {
 				System.out.println("Example of @Bean annotation:- ");
 				Student v = context.getBean("wilson", Student.class);
 
-				System.out.println("Printing Student : "+ v);
+				System.out.println("Printing Student using bean name : "+ v);
 
 				Student v1 = context.getBean("florida", Student.class);
 
-				System.out.println("Printing Student : "+ v1);
+				System.out.println("Printing Student using bean name: "+ v1);
 
 				Student v2 = context.getBean(Student.class);
 
-				System.out.println("Printing Student : "+ v2);
+				System.out.println("Printing Student primary annotation: "+ v2);
 		}
 }
