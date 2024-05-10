@@ -24,7 +24,7 @@ public class ProjectConfig {
 				return v;
 		}
 
-		@Bean
+		@Bean("flori")
 		public Student florida(){
 				System.out.println("Inside florida bean creation method");
 				Student v = new Student("2", "florida");

@@ -14,11 +14,11 @@ public class IOCExampleService {
 
 				Student v = context.getBean("wilson", Student.class);
 
-				System.out.println("Printing Student using bean name : "+ v);
+				System.out.println("Printing Student using method name as bean name : "+ v);
 
-				Student v1 = context.getBean("florida", Student.class);
+				Student v1 = context.getBean("flori", Student.class);
 
-				System.out.println("Printing Student using bean name: "+ v1);
+				System.out.println("Printing Student using bean name given inside annotation : "+ v1);
 
 				Student v2 = context.getBean(Student.class);
 
