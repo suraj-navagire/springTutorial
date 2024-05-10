@@ -1,5 +1,6 @@
 package org.example.spring;
 
+import org.example.spring.bean.DummyType;
 import org.example.spring.bean.Student;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +8,14 @@ import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ProjectConfig {
+
+		@Bean
+		public DummyType dummy(){
+				System.out.println("Inside dummyType bean creation method");
+				DummyType d = new DummyType("Dummy Type object");
+				return d;
+		}
+
 
 		@Bean
 		public Student wilson(){
