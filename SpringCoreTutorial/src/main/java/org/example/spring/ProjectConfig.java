@@ -3,9 +3,11 @@ package org.example.spring;
 import org.example.spring.bean.DummyType;
 import org.example.spring.bean.Student;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+@ComponentScan(value = {"org.example.spring.bean"})
 @Configuration
 public class ProjectConfig {
 
